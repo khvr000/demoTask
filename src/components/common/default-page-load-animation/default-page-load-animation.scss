@@ -1,0 +1,52 @@
+@import "../../../scss/_font-styles";
+
+.dat-default-page-load-animation-component {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    //animation: loading-circle-animation 1s infinite;
+
+    @keyframes loading-circle-animation {
+        0% {
+            opacity: 1;
+            width: 200px;
+            height: 200px;
+        }
+
+        60% {
+            opacity: 0;
+            width: 180px;
+            height: 180px;
+        }
+
+        100% {
+            opacity: 1;
+            width: 200px;
+            height: 200px;
+        }
+    }
+
+    .loading-circle {
+        width: 200px;
+        height: 200px;
+        border-radius: 20px;
+        position: absolute;
+    }
+
+    .logo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        z-index: 3;
+        font-size: $h1-fontSize;
+        font-weight: $h1-fontWeight;
+    }
+}

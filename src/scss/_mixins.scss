@@ -1,0 +1,169 @@
+@import "./_font-styles";
+@import "./_spacings";
+
+@mixin default-vertical-scrollbar {
+    &::-webkit-scrollbar {
+        width: 6px;
+        position: absolute;
+        right: 0;
+    }
+
+    &::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: rgba(0, 0, 0, 0.1);
+        border-radius: 6px;
+    }
+
+    &:hover::-webkit-scrollbar-thumb {
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+}
+
+@mixin default-horizontal-scrollbar {
+    &::-webkit-scrollbar {
+        height: 6px;
+        position: absolute;
+        right: 0;
+    }
+
+    &::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: rgba(0, 0, 0, 0.1);
+        border-radius: 6px;
+    }
+
+    &:hover::-webkit-scrollbar-thumb {
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+}
+
+@mixin thin-vertical-scrollbar {
+    &::-webkit-scrollbar {
+        width: 4px;
+        position: absolute;
+        right: 0;
+    }
+
+    &::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: rgba(0, 0, 0, 0.1);
+        border-radius: 2px;
+    }
+
+    &:hover::-webkit-scrollbar-thumb {
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+}
+
+@mixin thin-horizontal-scrollbar {
+    &::-webkit-scrollbar {
+        height: 4px;
+        position: absolute;
+        right: 0;
+    }
+
+    &::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: rgba(0, 0, 0, 0.1);
+        border-radius: 2px;
+    }
+
+    &:hover::-webkit-scrollbar-thumb {
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+}
+
+@mixin default-horizontal-scrollbar {
+    &::-webkit-scrollbar {
+        height: 6px;
+        position: absolute;
+        right: 0;
+    }
+
+    &::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: rgba(0, 0, 0, 0.1);
+        border-radius: 2px;
+    }
+
+    &:hover::-webkit-scrollbar-thumb {
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+}
+
+@mixin flex-center-h-v {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@mixin fvc-text-link-as-text-button {
+    -webkit-appearance: none;
+    background-color: transparent;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+@mixin annotate-default-dropdown-style {
+    .dropdown {
+        .dropdown-trigger {
+            width: 100%;
+            padding: $spacing-0-5 $spacing-0-5 $spacing-0-5 $spacing-1;
+            white-space: nowrap;
+            text-align: left;
+            font-size: $paragraph-5-fontSize;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            cursor: default;
+
+            i.material-icons-outlined {
+                font-size: 1.8rem;
+            }
+        }
+
+        .dropdown-menu {
+            min-width: 200px;
+
+            .dropdown-menu-item-header {
+                font-size: $paragraph-6-fontSize;
+            }
+
+            .dropdown-menu-item {
+                height: 28px;
+                font-size: $paragraph-5-fontSize;
+                cursor: default;
+
+                i.material-icons-outlined.activeIcon {
+                    font-size: 1.8rem;
+                }
+
+                &.active {
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}

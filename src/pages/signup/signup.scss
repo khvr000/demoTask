@@ -1,0 +1,44 @@
+/**
+ * COPYRIGHT NOTICE Deepen AI, Inc. 2017-2020
+ * This software maybe subject to pending patent applications
+ */
+
+
+@import '../../scss/_spacings';
+@import '../../scss/_font-styles';
+
+@keyframes loading-circle-animation {
+    0% {
+        opacity: 1;
+        width: 200px;
+        height: 200px;
+    }
+
+    60% {
+        opacity: 0;
+        width: 180px;
+        height: 180px;
+    }
+
+    100% {
+        opacity: 1;
+        width: 200px;
+        height: 200px;
+    }
+}
+
+.signup-container {
+    //display: flex;
+    //align-items: center;
+    margin-top: 200px !important;
+
+
+    .signup-page-title {
+        margin-bottom: 12px;
+    }
+
+
+    .sign-up-button {
+        margin: 12px 0;
+    }
+}

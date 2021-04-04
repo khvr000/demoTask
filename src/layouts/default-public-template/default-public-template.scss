@@ -1,0 +1,16 @@
+/**
+ * COPYRIGHT NOTICE Deepen AI, Inc. 2017-2020
+ * This software maybe subject to pending patent applications
+ */
+
+
+.dat-default-public-template {
+    display: flex;
+    width: 100%;
+    flex: 1;
+
+    .dat-default-public-template-content-wrapper {
+        display: flex;
+        flex: 1;
+    }
+}
